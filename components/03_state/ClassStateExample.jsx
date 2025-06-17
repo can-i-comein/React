@@ -16,13 +16,9 @@ class ClassStateExample extends Component {
                 <button onClick={this.number1SumOne}>{msg}</button>
 
                 <h1>{number2}</h1>
-                <button
-                    onClick={() => {
-                        this.setState({ number2: number2 - 1 });
-                    }}
-                >
-                    {msg}
-                </button>
+                <button onClick={() => {
+                    this.setState({ number2: number2 - 1 });
+                }}>{msg}</button>
             </div>
         );
     }
