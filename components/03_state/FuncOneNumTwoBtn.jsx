@@ -8,19 +8,12 @@ const FuncOneNumTwoBtn = () => {
             <button
                 onClick={() => {
                     setNum(num - 1);
-                }}
-            >
-                -
-            </button>
-            &nbsp;&nbsp;
+                }}>-</button>&nbsp;&nbsp;
             <h2 style={{ display: 'inline' }}>{num}</h2>&nbsp;&nbsp;
             <button
                 onClick={() => {
                     setNum(num + 1);
-                }}
-            >
-                +
-            </button>
+                }}>+</button>
         </div>
     );
 };
