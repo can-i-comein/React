@@ -1,6 +1,8 @@
+import { useState } from 'react';
+
 const FuncStateExample = () => {
     const [number1, setNumber1] = useState(0);
-    const [number2, setNumber2] = useState(0);
+    const [number2, setNumber2] = useState(0); // 선언 및 초기화
 
     const number1SumOne = () => {
         setNumber1(number1 + 1);
@@ -15,10 +17,7 @@ const FuncStateExample = () => {
             <button
                 onClick={() => {
                     setNumber2(number2 - 1);
-                }}
-            >
-                click!
-            </button>
+                }}>click!</button>
         </div>
     );
 };
