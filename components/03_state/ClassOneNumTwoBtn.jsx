@@ -9,21 +9,15 @@ class ClassOneNumTwoBtn extends Component {
         const { num } = this.state;
         return (
             <div>
-                <button
-                    onClick={() => {
-                        this.setState({ num: num - 1 });
-                    }}
-                >
-                    -
-                </button>
-                &nbsp;&nbsp;
+                <button onClick={() => { // 내부
+                    this.setState({ num: num - 1 }); 
+                }}>-</button>&nbsp;&nbsp;
                 <h2 style={{ display: 'inline' }}>{num}</h2>&nbsp;&nbsp;
                 <button onClick={this.sumOne}>+</button>
             </div>
         );
     }
-
-    sumOne = () => {
+    sumOne = () => { // 외부
         this.setState({ num: this.state.num + 1 });
     };
 }
