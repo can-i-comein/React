@@ -6,6 +6,7 @@ import ClassProps from './components/02_props/ClassProps';
 import FuncProps from './components/02_props/FuncProps';
 
 import ClassStateExample from './components/03_state/ClassStateExample';
+import ClassOneNumTwoBtn from './components/03_state/ClassOneNumTwoBtn';
 import FuncStateExample from './components/03_state/FuncStateExample';
 import FuncOneNumTwoBtn from './components/03_state/FuncOneNumTwoBtn';
 import FuncNameJob from './components/03_state/FuncNameJob';
