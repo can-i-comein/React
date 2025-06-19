@@ -10,29 +10,10 @@ const FuncSendDelValue = () => {
         <div>
             <h1>(결과 나오는 부분)</h1>
             <input
-                onChange={(e) => {
-                    setValue(e.target.value);
-                }}
-            />
-            <br />
-            <br />
-            <button
-                onClick={() => {
-                    setText(value);
-                }}
-            >
-                값 전달
-            </button>
-            &nbsp;
-            <button
-                onClick={() => {
-                    setText('');
-                }}
-            >
-                값 삭제
-            </button>
+                onChange={(e) => {setValue(e.target.value);}}/><br /><br />
+            <button onClick={() => {setText(value);}}>값 전달</button>&nbsp;
+            <button onClick={() => {setText('');}}>값 삭제</button>
         </div>
     );
 };
-
 export default FuncSendDelValue;
