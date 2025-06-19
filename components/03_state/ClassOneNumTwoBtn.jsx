@@ -21,3 +21,4 @@ class ClassOneNumTwoBtn extends Component {
         this.setState({ num: this.state.num + 1 });
     };
 }
+export default ClassOneNumTwoBtn;
